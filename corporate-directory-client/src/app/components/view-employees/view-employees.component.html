@@ -1,0 +1,28 @@
+<br><br>
+<table class="table table-hover table-bordered" >
+    <thead class="thead-dark ">
+      <tr>
+        <th scope="col">Employee Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">phone</th>
+        <th scope="col">createdAt</th>
+        <th scope="col">updatedAt</th>
+
+
+      </tr>
+    </thead>
+    <tbody *ngFor="let list of listOfEmployees">
+      <tr>
+        <td>{{list._id}}</td>
+        <td>{{list.firstName}}</td>
+        <td>{{list.email}}</td>
+        <td>{{list.phone}}</td>
+        <td>{{list.createdAt   | date :'short'}}</td>
+        <td>{{list.updatedAt  | date :'short'}}</td>
+
+
+        
+      
+    </tbody>
+  </table>

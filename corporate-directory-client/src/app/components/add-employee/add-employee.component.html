@@ -1,0 +1,31 @@
+<br><br><div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card rounded-0">
+            <div class="card-header">
+                <h3 class="mb-0">Add Employee</h3>
+            </div>
+            <div class="card-body">
+                <form class="form"  #empForm="ngForm"  (ngSubmit)="addEmpData(empForm)">
+
+                    <div class="form-group">
+                        <input type="text"  class="form-control rounded-0" name="firstName" placeholder="enter employee first name" ngModel required />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text"  class="form-control rounded-0" name="lastName" placeholder="enter employee last name"  ngModel required />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text"class="form-control rounded-0" name="email"  placeholder="enter email name" ngModel required />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text"  class="form-control rounded-0" name="phone" placeholder="enter phonenumber"  ngModel  required />
+                    </div>
+                    <button class="btn btn-primary float-right"    [disabled]="!empForm.valid" >Log In</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
